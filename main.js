@@ -1,8 +1,38 @@
 // Your code here.
 
+const getFirstName = {
+  user: 'Daisy'
+};
+console.log(getFirstName);
 
 
+const getLastName = {
+  user: 'Warren'
+};
+  console.log(getLastName);
 
+
+const getFullName = {
+  user: 'Daisy' + ' ' + 'Warren'
+}; 
+console.log(getFullName);  
+
+function setFirstName(getFirstName) {
+  setFirstName(user);
+};
+console.log(getFirstName);
+
+const setAge = {
+  user: 'Daisy',
+  age: 25
+};
+console.log(setAge);
+
+function getBirthday(setAge) {
+  const setAge = setAge + 1'
+  for (const age of setAge +1 )  
+};
+console.log(setAge);
 
 // Our code here. Don't touch!
 if (typeof getFirstName === 'undefined') {
