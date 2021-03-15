@@ -18,7 +18,7 @@ const getFullName = {
 console.log(getFullName);  
 
 function setFirstName(getFirstName) {
-  setFirstName(user);
+  getFirstName(user);
 };
 console.log(getFirstName);
 
@@ -28,11 +28,30 @@ const setAge = {
 };
 console.log(setAge);
 
-function getBirthday(setAge) {
-  const setAge = setAge + 1'
-  for (const age of setAge +1 )  
+function giveBirthday(setAge) {
+  if(setAge.age !== undefined) {
+    setAge.age++;
+  } else {
+    setAge.age = 1;
+  }
 };
+
 console.log(setAge);
+
+function marry (person1, person2) {
+  person1.married = true;
+  person2.married = true;
+  person1.spouseName = getFullName(person2);
+  person2.spouseName = getFullName(person1);
+};
+
+function divorce(person1, person2) {
+  person1.married = false;
+  person2.married = false;
+  delete person1.spouseName;
+  delete person2.spouseName;
+};
+
 
 // Our code here. Don't touch!
 if (typeof getFirstName === 'undefined') {
